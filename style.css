@@ -1,10 +1,87 @@
 body {
     font-family: Roboto;
+    margin: 0;
+}
+
+.welcome {
+    padding: 0 144px 48px 144px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 }
 
 .welcome, footer {
     background-color: #1f2937;
 }
+
+.header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-links {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+a:hover, a:visited, a:link, a:active {
+    text-decoration: none;
+    color: #e5e7eb;
+}
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+button {
+    background-color: #3882f6;
+    color: #f9faf8;
+    font-weight: bold;
+    border-width: 0;
+    border-radius: 7px;
+    padding: 8px 24px;
+}
+
+.hero-right {
+    background-color: #6b6d72;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+    height: 200px;
+    flex-shrink: 0;
+}
+
+.add-info, .card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.info-cards {
+    display: flex;
+    gap: 48px;
+    align-items: center;
+}
+
+.card {
+    width: 144px;
+}
+
+.card button {
+    width: 144px;
+    height: 144px;
+    background-color: #ffffff;
+    border-width: 4px;
+    border-color: #3882f6;
+    border-style: solid;
+}
+
+
 
 h1, h3 {
     color: #f9faf8;
@@ -13,6 +90,7 @@ h1, h3 {
 h1 {
     font-weight: 900;
     font-size: 48px;
+    margin-bottom: 8px;
 }
 
 h2, .quote-main, .quote-auth{
@@ -26,11 +104,13 @@ h2 {
 
 h3 {
     font-size: 24px;
+    margin: 0;
 }
 
-.header-links, .hero-left p, .cta-left p, footer {
+.header-links, .hero-left p, .hero-right p, .cta-left p, footer {
     font-size: 18px;
     color: #e5e7eb;
+    margin: 8px 0;
 }
 
 ul {
@@ -39,18 +119,54 @@ ul {
 
 .quote-section {
     background-color: #e5e7eb;
+    padding: 48px 144px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 300px;
 }
 
 .quote-main {
     font-style: italic;
     font-weight: lighter;
     font-size: 36px;
+    margin: 0;
 }
 
 .quote-auth {
     font-size: 24px;
+    align-self: flex-end;
+    margin: 0;
+}
+
+.call-to-action {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
 }
 
 .cta-container {
-    background-color: rgb(54, 107, 253);
+    background-color: #3882f6;
+    border-radius: 7px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 800px;
+    height: 96px;
+    padding: 16px 96px;
+}
+
+.cta-container button {
+    border-width: 2px;
+    border-color: #ffffff;
+    border-style: solid;
+}
+
+footer {
+    height: 96px;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
